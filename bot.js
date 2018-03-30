@@ -17,9 +17,10 @@ client.on('message', message => {
   	}
 });
 
-if (fromID === me && text.includes("-say") ) {
-    bot.sendMessage({ to: channel, message: txt.replace('!say ','') });
-}
+   if (fromID === me && text.includes("-say") ) {
+       bot.sendMessage({ to: channel, message: txt.replace('!say ','') });
+    }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
