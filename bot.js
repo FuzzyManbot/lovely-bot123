@@ -1,6 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on('ready', () => {
+    console.log('I am ready!');
+});
+
 const prefix = "-";
 client.on(`message`, (msg) => {
     if (msg.author.equals(client.user)) return;
