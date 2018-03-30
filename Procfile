@@ -1,1 +1,2 @@
-#offline
+worker: node bot.js
+
