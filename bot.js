@@ -1,23 +1,23 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = "-";
+client.on(message, (msg) => {
+    if (msg.author.equals(client.user)) return;
+    if (msg.channel.type == "dm") return;
+    if (!msg.content.startsWith(prefix)) return;
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
+    var message = msg.content.toLowerCase();
+    var args = message.substring(prefix.length).split(" ");
 
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-});
+if (args[0].endsWith == "announce") {
+    var lD = prefix + args[0] + " ";
+        var annouce= msg.content.substr(lD.length);
 
-client.on('message', message => {
-    if (message.content === 'announcement-for-30.03.2018-22-20') {
-    	message.reply(' Told me to say this: Fuzzy will be taking me to bed for some time. I will be offline during this period! Either Fuzzy is just fixing some bugs or either hes adding some super super super cool stuff! to me!');
-  	}
-});
+    let embed = new Discord.MessageEmbed()
+        .addField('Annoucment', annouce)
+        .setColor("GOLD");
+msg.channel.send(embed);
+}
+})
 
-  
-
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+client.login(NDI5MzUzNTY2MzE1MjE2ODk2.DaAqXg.ZdF1lV7hs24XcGOPfYsLdRXLHbk);
