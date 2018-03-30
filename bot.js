@@ -11,17 +11,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content === 'Son') {
-    	message.reply('yes daddy?');
-  	}
-});
-
-client.on('message', message => {
-    if (message.content === 'did you do your homework?') {
-    	message.reply('yes i did daddy dont spank me');
-  	}
-});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
