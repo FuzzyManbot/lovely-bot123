@@ -12,8 +12,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'soon say it please') {
-    	message.reply('told me to say this: If you see me go offline then it is because daddy is working on me. Please talk to daddy if theres something wrong his tag is Fuzzy man#4885');
+    if (message.content === 'announcement-for-30.03.2018-22-20') {
+    	message.reply('Excuse me! Fuzzy will be taking me to bed for some time. I will be offline during this period! Either Fuzzy is just fixing some bugs or either hes adding some super super super cool stuff! to me!');
   	}
 });
 
