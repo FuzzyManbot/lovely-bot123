@@ -11,9 +11,9 @@ client.on('message', message => {
   	}
 });
 
-('message', message => {
+client.on('message', message => {
     if (message.content === 'soon say it please') {
-    	message.reply('@everyone If you see me go offline then it is because daddy is working on me. Please talk to daddy if theres something wrong his tag is Fuzzy man#4885');
+    	message.reply('told me to say this: If you see me go offline then it is because daddy is working on me. Please talk to daddy if theres something wrong his tag is Fuzzy man#4885');
   	}
 });
 
